@@ -14,4 +14,4 @@ Tecnologias Utilizadas
 HTML5
 CSS3
 
-< a href="https://gabrielg71.github.io/HTML-E-CSS/Desafios/d010/">Acesse meu site</a>
+<a href="https://gabrielg71.github.io/HTML-E-CSS/Desafios/d010/">Acesse meu site</a>
