@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'sri';
+    src: url('pacote-d012/Sriracha-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pass';
+    src: url('pacote-d012/PassionOne-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    font-family: 'pass';
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+h1#principal{
+    font-size: 60px;
+}
+
+span#subprincipal {
+    font-weight: bolder;
+}
+
+p.poesia {
+    font-family: 'sri';
+    font-size: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+p#poesia2 {
+    font-family: 'sri';
+    font-size: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: white;
+    background-image: url('pacote-d012/imagens/background001.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

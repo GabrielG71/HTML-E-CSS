@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(168, 245, 168);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1#principal{
+    text-align: center;
+    background-color: green;
+    color: white;
+    font-size: 40px;
+}
+
+h1{
+    color: green;
+}
+
+h2{
+    color: rgb(60, 179, 60);
+}
+
+.curso{
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}

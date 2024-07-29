@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        p.texto{
+            text-indent: 25px;
+        }
+
+        p.nome{
+            text-indent: 30px;
+            text-align: justify;
+        }
+
+        nav{
+            text-align: center;
+            background-color: white;
+            width: 333px;
+            height: 25px;
+            font-weight: bolder;
+            margin: auto;
+            padding: 5px;
+            
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: black;
+            margin-right: 30px;
+        }
+
+        article > aside {
+            background-color: lightgray;
+            color: black;
+            padding: 5px;
+            border-radius: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin: auto;
+            padding: 5px;
+            outline: 5px solid white;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <aside>
+                    <h2>Noticias sobre o Brasil:</h2>
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quos magnam sequi blanditiis deleniti eveniet harum tempora repellendus, commodi officiis qui obcaecati iure earum animi ipsa. Sequi reiciendis perspiciatis magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, reprehenderit repellat voluptates in expedita eveniet temporibus magnam quo, iste nesciunt itaque officiis ducimus! Sint excepturi porro omnis non? Similique, rem.</p>
+                        <p class="nome">Artigo escrito por José da Silva.</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p class="texto">Desenvolvido pelo curso em vídeo.</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>
