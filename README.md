@@ -4,17 +4,12 @@ Este repositório contém vários projetos de sites desenvolvidos como exercíci
 Estrutura do Repositório
 O repositório está organizado da seguinte forma:
 
-exercicios_curso/: Contém todos os projetos de exercícios desenvolvidos durante o curso de HTML e CSS.
+exercicios: Contém todos os projetos de exercícios desenvolvidos durante o curso de HTML e CSS.
 
-projeto1/
-projeto2/
-projeto3/
-...
-projetos_independentes/: Contém projetos desenvolvidos de forma independente, aplicando os conceitos aprendidos no curso.
+desafios: Contém todos os projetos de desafio desenvolvidos durante o curso de HTML e CSS.
 
-projeto_independente1/
-projeto_independente2/
-...
+projetos indepedentes: contém alguns projetos indepedentes desenvolvidos durante o curso de HTML e CSS.
+
 Tecnologias Utilizadas
 HTML5
 CSS3
