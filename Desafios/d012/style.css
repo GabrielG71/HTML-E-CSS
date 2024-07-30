@@ -95,3 +95,10 @@ p#poesia3 {
     justify-content: left;
     padding: 10px;
 }
+
+aside#imagemfundo > p {
+    margin-left: 35px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.7)
+
+}
