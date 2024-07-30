@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+header {
+    background-color: #0066ff;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div#yes {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.mn {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+a.mn:hover {
+    text-decoration: underline;
+    background-color: darkblue;
+    padding: 10px;
+}
+
+#logo {
+    height: 100px;
+    vertical-align: middle;
+}
+
+#yes p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
