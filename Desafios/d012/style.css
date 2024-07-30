@@ -34,8 +34,14 @@ h1#principal{
     font-size: 60px;
 }
 
-span#subprincipal {
+a#subprincipal {
     font-weight: bolder;
+    color: white;
+    text-decoration: none;
+}
+
+a#subprincipal:hover {
+    text-decoration: underline;
 }
 
 p.poesia {
@@ -70,4 +76,22 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+aside#imagemfundo {
+    background-image: url(pacote-d012/imagens/background002.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+p#poesia3 {
+    font-family: 'sri';
+    font-size: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
 }
