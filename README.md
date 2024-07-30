@@ -14,4 +14,15 @@ Tecnologias Utilizadas
 HTML5
 CSS3
 
-<a href="https://gabrielg71.github.io/HTML-E-CSS/Desafios/d010/">Acesse meu site</a>
+<a href="https://gabrielg71.github.io/HTML-E-CSS/Desafios/d010/">Acesse meu site sobre o Bugdroid.</a>
+
+<a href = "https://gabrielg71.github.io/HTML-E-CSS/Desafios/d012/">Acesse meu site sobre o Cordel Moreno.</a>
+
+Lista de exercícios:
+Para acessar meus exercícios digite hhtps://gabrielg71.github.io/HTML-E-CSS/Exercícios/ex(exercício desejado)/index.html
+
+Lista de desafios:
+Para acessar meus desafios digite https://gabrielg71.github.io/HTML-E-CSS/Desafios/d(desafio desejado)/index.html
+Desafios disponíveis do 001 até o 012.
+
+Obs: Se não funcionar provavelmente o arquivo html não se chama index.html. Caso isso aconteça e você queira ver, favor entrar em contato comigo.
