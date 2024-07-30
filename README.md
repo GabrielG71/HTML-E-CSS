@@ -20,6 +20,7 @@ CSS3
 
 Lista de exercícios:
 Para acessar meus exercícios digite https://gabrielg71.github.io/HTML-E-CSS/Exercícios/ex(exercício desejado)/index.html
+Exercícios disponiveis do 001 até o 022.
 
 Lista de desafios:
 Para acessar meus desafios digite https://gabrielg71.github.io/HTML-E-CSS/Desafios/d(desafio desejado)/index.html
