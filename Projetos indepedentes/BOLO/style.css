@@ -153,3 +153,26 @@ footer {
     margin-top: 20px;
     font-size: 1rem;
 }
+
+.mensagens-container {
+    margin-top: 20px;
+}
+
+.mensagem {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mensagem h2 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.mensagem p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
