@@ -101,6 +101,13 @@ a.mn:hover {
     background-color: #f0f0f0;
 }
 
+.q1::before {
+    content: '🎬';
+    font-size: 100px;
+    color: gray;
+}
+
+
 #sup {
     text-align: center;
     color: white;
@@ -170,4 +177,11 @@ a.mn:hover {
     margin-top: 5px;
     font-size: 20px;
     font-family: 'Arial', sans-serif;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #0066ff;
+    z-index: 1000;
 }
