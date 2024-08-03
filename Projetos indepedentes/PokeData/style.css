@@ -39,6 +39,7 @@ h2#subprincipal {
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 10px;
 }
 
 #pokebola {
