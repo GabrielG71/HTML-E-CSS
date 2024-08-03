@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+body {
+    background-color: #F2CB05;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1#principal {
+    font-weight: normal;
+    font-size: 60px;
+    padding-top: 80px;
+}
+
+h2#subprincipal {
+    padding-top: 10px;
+    font-weight: normal;
+}
+
+#pokemon {
+    width: 380px;
+    margin-left: 1200px;
+    margin-top: -175px;
+}
+
+#pikachu_img {
+    height: 500px;
+    margin-left: 1175px;
+}
+
+#bloco {
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 150px; 
+    margin-left: 300px;
+    margin-top: -300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#pokebola {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 10px;
+}
+
+
+#bloco:hover {
+    text-decoration: underline;
+    background-color: rgba(189, 195, 199, 0.925);
+    border: 1px solid black;
+}
