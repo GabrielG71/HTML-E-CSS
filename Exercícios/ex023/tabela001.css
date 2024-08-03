@@ -14,6 +14,15 @@ td {
     padding: 8px;
 }
 
+th {
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgba(248,249,250,255);
+    padding: 8px; 
+}
+
 table {
     border-collapse: collapse;
 }
@@ -35,5 +44,14 @@ table {
 }
 
 #title {
-    margin-left: 275px;
+    margin-left: 405px;
+}
+
+caption {
+    background-color: rgba(234,236,240,255);
+    width: 450px;
+    font-size: 25px;
+    margin-left: 220px;
+    border: 1px solid black;
+    border-collapse: collapse;
 }
