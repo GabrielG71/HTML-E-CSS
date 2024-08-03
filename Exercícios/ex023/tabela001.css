@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.head {
+    background-color: rgba(234,236,240,255);
+    font-weight: bolder;
+}
+
+td {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgba(248,249,250,255);
+    padding: 8px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.pop {
+    text-align: right;
+}
+
+.flag {
+    text-decoration: none;
+}
+
+.flag:hover {
+    text-decoration: underline;
+}
+
+.mud {
+    color: #008000;
+}
+
+#title {
+    text-align:  center;
+}
