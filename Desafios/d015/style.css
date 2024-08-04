@@ -14,7 +14,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1700px;
 }
 
 iframe {
@@ -26,6 +26,7 @@ iframe {
     border-image-slice: 70 17 70 17 fill;
     border-image-repeat: stretch;
     margin-right: 20px;
+    margin: auto;
 }
 
 .right-column {
@@ -39,4 +40,10 @@ iframe {
     width: 90px;
     height: 90px;
     margin-bottom: 10px;
+}
+
+.button:hover {
+    border: 3px solid rgba(255, 255, 255, 0.671);
+    width: 100px;
+    height: 100px;
 }
