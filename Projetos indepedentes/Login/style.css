@@ -27,7 +27,6 @@ body {
 
 .campo {
     background-color: #fefefe;
-    border: 1px solid gray;
     width: 500px;
     text-align: center;
     margin: auto;
@@ -35,4 +34,26 @@ body {
 
 footer {
     text-align: center;
+}
+
+input {
+    width: 500px;
+}
+
+#double {
+    text-align: center;
+    font-size: 30px;
+}
+
+.Cadastro {
+    background-color: #3d9db3;
+    color: white;
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.Cadastro:hover {
+    font-size: 35px;
+    text-decoration: underline;
 }
