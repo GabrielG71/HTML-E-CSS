@@ -11,22 +11,20 @@
         <div id="box">
             <h1 id="login">Login</h1>
             <hr>
-            <p class="id">Seu e-mail:</p>
-            <div class="campo">
-                <input type="text" name="c1" id="ic1">
-            </div>
-            <p class="id">Sua senha:</p>
-            <div class="campo">
-                <input type="text" name="c2" id="ic2">
-            </div>
-            <div id="double">
-                <div class="Cadastro">
-                    <p>Cadastrar</p>
+            <form>
+                <label for="ic1" class="id">Seu e-mail:</label>
+                <div class="campo">
+                    <input type="email" name="email" id="ic1" required>
                 </div>
-                <div class="Cadastro">
-                    <p>Logar</p>
+                <label for="ic2" class="id">Sua senha:</label>
+                <div class="campo">
+                    <input type="password" name="senha" id="ic2" required>
                 </div>
-            </div>
+                <div id="double">
+                    <button type="submit" class="Cadastro">Cadastrar</button>
+                    <button type="submit" class="Cadastro">Logar</button>
+                </div>
+            </form>
         </div>
     </main>
 
