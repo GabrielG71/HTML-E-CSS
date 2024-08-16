@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Equação 2° Grau</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 200px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 50px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            margin-top: 30px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Calculadora de Equação do 2° Grau</h1>
+    <p><img src="einstein.jfif" alt="foto do Einstein"></p>
+    <p>
+        <input type="text" name="a" id="ia" placeholder="A"> Coeficiente A
+    </p>
+    <p>
+        <input type="text" name="b" id="ib" placeholder="B"> Coeficiente B
+    </p>
+    <p>
+        <input type="text" name="c" id="ic" placeholder="C"> Coeficiente C
+    </p>
+    <button onclick="solveEquation()">Calcular</button>
+
+    <div class="result" id="result"></div>
+
+    <script>
+        function getInputValue(id) {
+            let input = document.getElementById(id).value;
+            if (isNaN(input) || input.trim() === "") {
+                return null;
+            }
+            return parseFloat(input);
+        }
+
+        function calculateQuadraticEquation(a, b, c) {
+            let delta = (b * b) - 4 * a * c;
+            let sqrtDelta = Math.sqrt(delta);
+
+            if (delta < 0) {
+                return {
+                    message: "A equação não possui raízes reais.",
+                    roots: null
+                };
+            }
+
+            let x1 = (-b + sqrtDelta) / (2 * a);
+            let x2 = (-b - sqrtDelta) / (2 * a);
+
+            return {
+                delta: delta,
+                x1: x1,
+                x2: x2,
+                sum: x1 + x2,
+                difference: x1 - x2,
+                product: x1 * x2
+            };
+        }
+
+        function displayResults(a, b, c, results) {
+            const resultDiv = document.getElementById("result");
+            if (results.roots === null) {
+                resultDiv.innerHTML = results.message;
+            } else {
+                resultDiv.innerHTML = `
+                    <p>Sua equação será: ${a}x² + (${b})x + (${c}) = 0</p>
+                    <p>Δ = ${b}² - 4 x ${a} x ${c} = ${results.delta}</p>
+                    <p>x1 = ${results.x1}</p>
+                    <p>x2 = ${results.x2}</p>
+                    <p>A soma das raízes é ${results.sum}.</p>
+                    <p>A diferença das raízes é ${results.difference}.</p>
+                    <p>O produto das raízes é ${results.product}.</p>
+                `;
+            }
+        }
+
+        function solveEquation() {
+            let a = getInputValue("ia");
+            let b = getInputValue("ib");
+            let c = getInputValue("ic");
+
+            if (a === null || b === null || c === null) {
+                alert("Por favor, insira valores válidos para todos os coeficientes.");
+                return;
+            }
+
+            let results = calculateQuadraticEquation(a, b, c);
+            displayResults(a, b, c, results);
+        }
+    </script>
+</body>
+
+</html>
