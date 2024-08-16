@@ -54,6 +54,10 @@
             font-weight: bold;
             font-size: 18px;
         }
+
+        #chartContainer {
+            margin-top: 30px;
+        }
     </style>
 </head>
 
@@ -72,7 +76,11 @@
     <button onclick="solveEquation()">Calcular</button>
 
     <div class="result" id="result"></div>
+    <div id="chartContainer">
+        <canvas id="quadraticChart"></canvas>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         function getInputValue(id) {
             let input = document.getElementById(id).value;
@@ -120,6 +128,7 @@
                     <p>A diferença das raízes é ${results.difference}.</p>
                     <p>O produto das raízes é ${results.product}.</p>
                 `;
+                drawGraph(a, b, c);
             }
         }
 
@@ -135,6 +144,48 @@
 
             let results = calculateQuadraticEquation(a, b, c);
             displayResults(a, b, c, results);
+        }
+
+        function drawGraph(a, b, c) {
+            const ctx = document.getElementById('quadraticChart').getContext('2d');
+
+            const xValues = [];
+            const yValues = [];
+            for (let x = -10; x <= 10; x += 0.1) {
+                xValues.push(x);
+                yValues.push(a * x * x + b * x + c);
+            }
+
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        label: 'Gráfico da Função',
+                        data: yValues,
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 2,
+                        fill: false,
+                        tension: 0.1
+                    }]
+                },
+                options: {
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'X'
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Y'
+                            }
+                        }
+                    }
+                }
+            });
         }
     </script>
 </body>
